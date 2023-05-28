@@ -1,0 +1,545 @@
+:root{
+    --beige :#F0E4C7;
+    --spurple: #800080;
+    --sgreen: #2E8B57;
+    --light-yellow: #FFFFE0; 
+    --white: #f0f0f0;
+    --light-grey: #d7d7d7;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-BlackItalic.woff2') format('woff2'),
+        url('FreightBigPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-BoldItalic.woff2') format('woff2'),
+        url('FreightBigPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Bold.woff2') format('woff2'),
+        url('FreightBigPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Black.woff2') format('woff2'),
+        url('FreightBigPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-BookItalic.woff2') format('woff2'),
+        url('FreightBigPro-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Semibold.woff2') format('woff2'),
+        url('FreightBigPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-MediumItalic.woff2') format('woff2'),
+        url('FreightBigPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Medium.woff2') format('woff2'),
+        url('FreightBigPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-SemiboldItalic.woff2') format('woff2'),
+        url('FreightBigPro-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Light.woff2') format('woff2'),
+        url('FreightBigPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Book.woff2') format('woff2'),
+        url('FreightBigPro-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-LightItalic.woff2') format('woff2'),
+        url('FreightBigPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none !important;
+}
+a,p{
+    font-family: 'League Spartan', sans-serif !important;
+    font-weight: 300 !important;
+}
+h1, h2{
+    font-family: 'Freight Big Pro';
+}
+button{
+    text-transform: uppercase !important;
+    font-size: 22px !important;
+    font-weight: 300;
+}
+img.arrow{
+    width: 35px; position: relative;
+}
+.bgcolor-light-yellow{
+    background-color: #FFFFE0;
+}
+
+/*Navbar*/
+.navbar{
+    padding: 1.5em 6.15em !important;
+}
+.navbar-bgcolor{
+    background-color: ;
+}
+.fixed-top.scrolled{
+    background: rgba(0, 0, 0, 0.85);
+    transition: .3s linear all;
+}
+img.logo{
+    width: 250px;
+}
+.navbar .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+.navbar li.nav-item{
+    padding: 0 2em;
+}
+.navbar a.nav-link {
+    font-size: 22px !important;
+    padding: 0 1.5em; color: #FFF;
+    text-transform: uppercase;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 2px;
+}
+.navbar-toggler {
+    color: var(--white) !important;
+    background-color: var(--white) !important;
+}
+footer{
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1.85em 6.15em;
+    margin-top: 5em;
+}
+footer img.logo{
+    position: relative; left: -4px;
+}
+footer p{
+    color: var(--white);
+}
+footer p, footer a{
+    font-size: 22px; line-height: 1.25;
+}
+footer a{
+    color: var(--light-grey);
+}
+footer .nav p{
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+}
+footer a:hover{
+    opacity: .75; transition: .3s ease all;
+}
+
+/*Page Banner*/
+.jumbotron{
+    position: relative;
+    margin-bottom: 0;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%; height: 100vh;
+}
+.jumbotron article{
+    padding-left: 7em; margin-top: -25px;
+}
+.jumbotron article h1{
+    font-size: 70px; color: #FFF;
+    font-weight: 600; font-display: swap;
+}
+.jumbotron article button{
+    width: 290px; letter-spacing: 3px;
+    border-radius: 30px; border: none;
+    background: none; color: #FFF; 
+    position: relative; top: 5em;
+}
+
+/**/
+.row > *{
+    margin: 0 2.5em;
+}
+img.decoration-1{
+    width: 100%;
+}
+section{
+    padding: 6em 0;
+    position: relative;
+}
+section#opening{
+    padding: 0 0;
+}
+section h2{
+    font-size: 70px; 
+    letter-spacing: 2.5px;
+    padding-top: 1.25em;
+    margin-bottom: -0.5em;
+    font-family: 'Freight Big Pro';
+    text-transform: uppercase;
+}
+#aboutus article h3{
+    font-size: 50px;
+    color: var(--spurple);
+    margin-bottom: .85em;
+    font-family: 'Freight Big Pro';
+    text-transform: uppercase;
+}
+#aboutus article{
+    margin-top: 7.5em;
+}
+#assortment article{
+    margin-top: 9em;
+}
+#assortment article h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: var(--spurple);
+    margin-bottom: 1.15em;
+    font-family: 'League Spartan', sans-serif;
+}
+#assortment article h4{
+    font-size: 50px;
+    color: var(--spurple);
+    margin-bottom: .85em;
+    font-family: 'Freight Big Pro'
+}
+#aboutus article p,
+#assortment article p{
+    font-size: 22px; letter-spacing: .75px;
+}
+#assortment article button{
+    width: 220px; letter-spacing: 3px;
+    border-radius: 30px; border: none;
+    background: none; color: var(--sgreen); 
+    margin-top: 2.2em; 
+}
+#contact h2{
+    padding-top: .5em;
+}
+#contact #contact-image p{
+    color: var(--white); font-size: 40px;
+    letter-spacing: 1.25px; line-height: 1.85;
+    font-family: 'Freight Big Pro' !important; 
+}
+#contact .background-image{
+    position: relative;
+    margin-bottom: 0;
+    background-position: center;
+    background-size: cover;
+    width: 80%; height: 75vh;
+}
+#contact article h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: var(--sgreen);
+    margin-bottom: 1.15em;
+}
+#contact #contact-info p{
+    font-size: 25px; line-height: 1.3;
+    margin-bottom: 0.85em;
+}
+#contact .row > *{
+    margin: 0 0;
+}
+#contact .circle{
+    border-radius: 50%;
+    background-color: #e4a3df;
+    color: var(--spurple);
+    width: 50px; height: 50px;
+}
+#contact-info{
+    margin-top: 8em;
+}
+
+@media (max-width: 576px) { 
+    img.decoration-1 {
+        width: 75%;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) { 
+    img.decoration-1 {
+        width: 50%;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+    
+    img.logo {
+        width: 200px;
+    }
+    .jumbotron article {
+        padding-left: 2em;
+    }
+    .jumbotron article h1{
+        font-size: 55px;
+    }
+    section {
+        padding: 3.75em 0;
+    }
+    section h2 {
+        font-size: 40px;
+    }
+    #aboutus article, #assortment article{
+        margin-top: 4em;
+        text-align: center;
+    }
+    #aboutus article h3, #assortment article h4{
+        font-size: 40px;
+    }
+    #assortment article h3{
+        font-size: 25px;
+        margin-bottom: 0;margin-top: 0.75em;
+    }
+    #assortment article h4{
+        margin-bottom: 0.5em;
+    }
+    #assortment article button{
+        margin: auto;
+    }
+    section article p{
+        padding: 0 2.5em;
+        text-align: left;
+        font-size: 18px;
+    }
+    #aboutus .me-5{
+        margin-right: 0 !important;
+    }
+    #aboutus .pt-5{
+        padding-top: 0; margin-top: -2.5em;
+    }
+    img.decoration-2{
+        margin-top: 1.85em;
+    }
+    #contact .background-image{
+        height: 60vh; margin-top: -2em;
+    }
+    #contact #contact-image p{
+        font-size: 25px; padding: 0 25px;
+        position: relative; top: -0.5em;
+    }
+    #contact #contact-image .ms-5{
+        margin-left: 0 !important;
+    }
+    #contact-info{
+        margin-top: 5em;
+    }
+    #contact article h3, #contact #contact-info p{
+        text-align: center;
+    }
+    #contact article h3{
+        margin: 1em 0;
+    }
+    #contact .circle{
+        margin: auto;
+        margin-top: 2em;
+    }
+    footer{
+        margin-top: 3em;
+        padding: 1.85em 0;
+    }
+    footer .col-md-8 p{
+        margin-right: 5em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 990px) { 
+    .navbar {
+        padding: 1em 10px !important;
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .navbar-nav {
+        margin-top: 1.5em;
+    }
+    .navbar li.nav-item{
+        text-align: center;
+        padding: 0.8em 2em;
+    }
+    .navbar a.nav-link {
+        font-size: 22px !important;
+        padding: 0 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 995px) { 
+    img.decoration-1 {
+        width: 60%; 
+    }
+    footer .row > * {
+        margin: 0 0; 
+    }
+}
+@media (max-width: 995px) { 
+    .jumbotron {
+        height: 70vh;
+    }
+    section#aboutus .col-md-4{
+        width: 70%;
+    }
+    #aboutus article, #assortment article{
+        margin-top: 5em;
+        text-align: center;
+    }
+    #aboutus article p, #assortment article p{
+        text-align: left;
+    }
+    #aboutus article .justify-content-end{
+        justify-content: center !important;
+    }
+    #aboutus article h3{
+        margin-bottom: 0.35em;
+    }
+    #aboutus article .mt-5{
+        margin-top: 0 !important;
+    }
+    #customersatisfaction{
+        margin-top: 3em !important;
+    }
+    #aboutus article .pt-5{
+        padding-top: 0 !important;
+    }
+    #aboutus article .pb-5{
+        padding-bottom: 0 !important;
+    }
+    img.decoration-2{
+        margin-top: 1.5em;
+        width: 100%;
+    }
+    #assortment .col-md-2{
+        width: 40%;
+    }
+    #assortment .col-md-4{
+        width: 70%;
+    }
+    #assortment article h3{
+        margin-bottom: 0;
+        margin-top: 0.75em;
+    }
+    #assortment article h4{
+        margin-bottom: 0.3em;
+    }
+    #contact .col-md-3 {
+        width: 80%; margin: 0.5em 0;
+    }
+    #contact .col-md-2{
+        width: 100%;
+    }
+    #contact-info {
+        margin-top: 6em;
+        text-align: center;
+    }    
+    #contact article h3{
+        margin: 0.5em 0;
+    }
+    #contact .circle {
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) and (max-width: 1235px) {
+    .navbar {
+        padding: 1.5em 1em !important;
+    }
+    .navbar-nav {
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 992px) and (max-width: 1415px) {
+    .navbar {
+        padding: 1.5em 1em !important;
+    }
+    .navbar-nav {
+        align-items: center;
+        text-align: center;
+    }
+    #contact .col-md-2{
+        width: 100%;
+    }
+    #contact-info {
+        margin-top: 6em;
+        text-align: center;
+    }    
+    #contact article h3{
+        margin: 0.5em 0;
+    }
+    #contact .circle {
+        margin: auto;
+    }
+}
+
