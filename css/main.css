@@ -361,7 +361,7 @@ section h2{
         text-align: center;
     }
     #aboutus article h3, #assortment article h4{
-        font-size: 35px;
+        font-size: 30px;
     }
     #assortment article h3{
         font-size: 22px;
@@ -450,7 +450,7 @@ section h2{
 }
 @media (max-width: 995px) { 
     section#aboutus .col-md-4{
-        width: 70%;
+        width: 80%;
     }
     #aboutus article, #assortment article{
         margin-top: 5em;
@@ -485,7 +485,7 @@ section h2{
         width: 40%;
     }
     #assortment .col-md-4{
-        width: 70%;
+        width: 80%;
     }
     #assortment article h3{
         margin-bottom: 0;
