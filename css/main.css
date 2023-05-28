@@ -332,6 +332,14 @@ section h2{
     .jumbotron {
         height: 100vh !important;
     }
+    #assortment article button{
+        margin-top: 1em;
+        justify-content: left !important;
+        width: 100%;
+    }
+    #assortment article button i{
+        padding-right: 1.5em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px) { 
     img.decoration-1 {
@@ -369,9 +377,6 @@ section h2{
     }
     #assortment article h4{
         margin-bottom: 0.5em;
-    }
-    #assortment article button{
-        margin-top: 1em;
     }
     section article p{
         padding: 0 0;
