@@ -329,6 +329,9 @@ section h2{
     img.decoration-1 {
         width: 75%;
     }
+    .jumbotron {
+        height: 100vh !important;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px) { 
     img.decoration-1 {
@@ -440,10 +443,12 @@ section h2{
         margin: 0 0; 
     }
 }
-@media (max-width: 995px) { 
+@media (min-width: 577px) and (max-width: 995px) { 
     .jumbotron {
         height: 70vh;
     }
+}
+@media (max-width: 995px) { 
     section#aboutus .col-md-4{
         width: 70%;
     }
